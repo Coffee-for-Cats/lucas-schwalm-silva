@@ -1,0 +1,27 @@
+{
+  "name": "lucas-schwalm-silva",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coffee-for-Cats/lucas-schwalm-silva.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Coffee-for-Cats/lucas-schwalm-silva/issues"
+  },
+  "homepage": "https://github.com/Coffee-for-Cats/lucas-schwalm-silva#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
