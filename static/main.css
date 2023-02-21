@@ -11,7 +11,7 @@
 body {
     width: 100%;
     height: 100%;
-    background-image: url("./background.svg");
+    background-image: url("./background1.svg");
     box-shadow: 2rem 1rem 12rem rgba(20, 20, 20, .4) inset;
     background-size: cover;
 
