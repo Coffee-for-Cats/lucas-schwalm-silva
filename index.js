@@ -9,5 +9,5 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/static/main.html"));
 })
 
-app.listen(5000, () => console.log("Running on port 3000"));
+app.listen(5000, () => console.log("Running on port 5000"));
 module.exports = app;
