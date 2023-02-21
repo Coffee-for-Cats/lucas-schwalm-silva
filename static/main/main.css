@@ -13,7 +13,7 @@ body {
 
     background-image: url("./background1.svg");
     /* background-attachment: fixed; */
-    box-shadow: 2rem 1rem 12rem rgba(20, 20, 20, .4) inset;
+    /* box-shadow: 2rem 1rem 12rem rgba(20, 20, 20, .4) inset; */
     background-size: cover;
 
     display: flex;
