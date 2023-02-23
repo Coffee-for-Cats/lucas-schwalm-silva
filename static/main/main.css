@@ -23,13 +23,13 @@ body {
 
 main {
     width: clamp(45vw, 38rem, 90vw);
-    min-height: min(60rem, 80vh);
 
     background: rgb(180, 180, 180);
     box-shadow: 0 4rem 8rem 0rem rgba(0, 0, 0, .6);
 
     margin: 6rem 0 6rem 0;
     padding: min(4rem, 10vw);
+    padding-bottom: 10vh;
     border-radius: 1rem;
 }
 
