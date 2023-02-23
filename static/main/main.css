@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 
-    font-family: "Open Sans", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     line-height: 1.4;
     color: #060606;
 }
@@ -41,7 +41,7 @@ h1 {
 }
 
 p {
-    font-size: clamp(0.4rem, 5vw, 1.2rem);
+    font-size: clamp(0.45rem, 1.6vw, 1.6rem);
     margin-top: 2rem;
     margin-right: min(4rem, 2vw)
 }
