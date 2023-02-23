@@ -41,8 +41,8 @@ h1 {
     padding-bottom: 1.4rem;
 }
 
-summary {
-    font-size: clamp(1.5rem, 5.5vw, 1.8rem);
+hr {
+    border: #060606 1px solid;
 }
 
 p {
@@ -50,10 +50,14 @@ p {
 }
 
 details {
-    padding: 1rem;
+    padding: 1rem 0 1rem 0;
     margin-left: -1rem;
     border-radius: 2rem;
-    transition: .2s;
+}
+
+details>* {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 details[open] {
@@ -63,6 +67,18 @@ details[open] {
     box-shadow: 0 1rem 3rem 0rem rgba(0, 0, 0, .15);
 }
 
-hr {
-    border: #060606 1px solid;
+summary {
+    cursor: pointer;
+    margin-top: -1rem;
+    padding-top: 1rem;
+
+    border-radius: 1.8rem 1.8rem 0 0;
+
+    font-size: clamp(1.5rem, 5.5vw, 1.8rem);
+}
+
+details[open]>summary {
+    color: rgb(180, 180, 180);
+    background-color: #262626;
+    border-bottom: black 2px solid;
 }
