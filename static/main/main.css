@@ -9,6 +9,7 @@
 }
 
 body {
+    font-size: clamp(1.4rem, 1.6vw, 1.6rem);
     min-height: 100vh;
 
     background-image: url("./background1.svg");
@@ -21,10 +22,10 @@ body {
 }
 
 main {
-    width: clamp(50vw, 42rem, 90vw);
-    min-height: 60vw;
+    width: clamp(45vw, 38rem, 90vw);
+    min-height: min(60rem, 80vh);
 
-    background: rgba(180, 180, 180);
+    background: rgb(180, 180, 180);
     box-shadow: 0 4rem 8rem 0rem rgba(0, 0, 0, .6);
 
     margin: 6rem 0 6rem 0;
@@ -34,16 +35,32 @@ main {
 
 h1 {
     text-align: center;
-    font-size: clamp(1rem, 8vw, 2.4rem);
+    font-size: clamp(2rem, 7vw, 2.6rem);
     font-family: "Oswald", sans-serif;
 
     padding-bottom: 1.4rem;
 }
 
+summary {
+    font-size: clamp(1.5rem, 5.5vw, 1.8rem);
+}
+
 p {
-    font-size: clamp(0.45rem, 1.6vw, 1.6rem);
-    margin-top: 2rem;
-    margin-right: min(4rem, 2vw)
+    padding: .6rem 0 .6rem 0;
+}
+
+details {
+    padding: 1rem;
+    margin-left: -1rem;
+    border-radius: 2rem;
+    transition: .2s;
+}
+
+details[open] {
+    margin: 1rem 0rem 0rem 0rem;
+    border: #060612 2px solid;
+    background-color: rgba(180, 180, 180);
+    box-shadow: 0 1rem 3rem 0rem rgba(0, 0, 0, .15);
 }
 
 hr {
