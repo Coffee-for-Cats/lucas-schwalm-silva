@@ -1,11 +1,19 @@
+:root {
+    --color-white: rgb(180, 180, 180);
+    --color-black: #060606;
+
+    --font-heading: "Roboto Slab", Times;
+    --font-body: "Source Sans Pro", sans;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: var(--font-body);
     line-height: 1.4;
-    color: #060606;
+    color: --color-black;
 }
 
 body {
@@ -22,27 +30,27 @@ body {
 }
 
 main {
-    width: clamp(45vw, 38rem, 90vw);
+    width: clamp(45vw, 38rem, 94vw);
 
     background: rgb(180, 180, 180);
     box-shadow: 0 4rem 8rem 0rem rgba(0, 0, 0, .6);
 
     margin: 6rem 0 6rem 0;
-    padding: min(4rem, 10vw);
-    padding-bottom: 10vh;
+    padding: min(4rem, 6vw);
     border-radius: 1rem;
 }
 
 h1 {
     text-align: center;
     font-size: clamp(2rem, 7vw, 2.6rem);
-    font-family: "Oswald", sans-serif;
-
-    padding-bottom: 1.4rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    padding-bottom: 1.2rem;
 }
 
 hr {
-    border: #060606 1px solid;
+    border: var(--color-black) 1px solid;
+    margin-bottom: 1rem;
 }
 
 p {
@@ -50,35 +58,30 @@ p {
 }
 
 details {
-    padding: 1rem 0 1rem 0;
-    margin-left: -1rem;
-    border-radius: 2rem;
-}
-
-details>* {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    border-radius: 1.6rem;
+    padding: .6rem;
 }
 
 details[open] {
     margin: 1rem 0rem 0rem 0rem;
-    border: #060612 2px solid;
-    background-color: rgba(180, 180, 180);
-    box-shadow: 0 1rem 3rem 0rem rgba(0, 0, 0, .15);
+    padding: 1rem;
+    border: var(--color-black) 2px solid;
+    box-shadow: 0 .5rem 2rem 0rem rgba(0, 0, 0, .2);
 }
 
 summary {
     cursor: pointer;
-    margin-top: -1rem;
-    padding-top: 1rem;
 
-    border-radius: 1.8rem 1.8rem 0 0;
-
+    font-family: var(--font-heading);
+    font-weight: 400;
     font-size: clamp(1.5rem, 5.5vw, 1.8rem);
 }
 
-details[open]>summary {
-    color: rgb(180, 180, 180);
-    background-color: #262626;
-    border-bottom: black 2px solid;
+li {
+    margin: .4rem 0 .6rem 1.6rem;
+}
+
+a {
+    color: var(--color-black);
+    text-decoration: none;
 }
