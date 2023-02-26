@@ -6,7 +6,7 @@ const path = require("path")
 app.use(express.static(path.join(__dirname, "static")))
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "/static/googleabae.html"))
+    res.sendFile(path.join(__dirname, "/static/main.html"))
 })
 
 app.listen(5000, () => console.log("Running on port 5000"))
