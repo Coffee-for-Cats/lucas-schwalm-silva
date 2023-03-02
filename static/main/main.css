@@ -1,9 +1,23 @@
+@import url("./fonts/golosText.ttf");
+
 :root {
     --color-white: rgb(180, 180, 180);
     --color-blue: #011223;
-
-    --font-heading: "Roboto Slab", Times;
-    --font-body: "Source Sans Pro", sans;
+}
+@font-face {
+    font-family: NormalText;
+    font-weight: 400;
+    src: url("./fonts/golosText400.woff2");
+}
+@font-face {
+    font-family: HeadingText1;
+    font-weight: 800;
+    src: url("./fonts/robotoSlab800.woff2");
+}
+@font-face {
+    font-family: HeadingText2;
+    font-weight: 600;
+    src: url("./fonts/robotoSlab600.woff2");
 }
 
 address {
@@ -15,7 +29,8 @@ address {
     margin: 0;
     box-sizing: border-box;
 
-    font-family: var(--font-body);
+    font-family: "normalText", sans; /* font-weight: 400; */
+    font-display: optional;
     line-height: 1.4;
     color: var(--color-blue);
 }
@@ -24,14 +39,14 @@ body {
     font-size: clamp(1.4rem, 1.6vw, 1.6rem);
     min-height: 100vh;
 
-    background-image: url("./background1.svg");
+    background-image: url("./images/background1.svg");
     background-color: var(--color-blue);
     background-size: cover;
 
     display: flex;
     justify-content: center;
 
-    overflow-y: overlay;
+    overflow-y: scroll;
 }
 
 main {
@@ -48,8 +63,7 @@ main {
 h1 {
     text-align: center;
     font-size: clamp(2rem, 7vw, 2.6rem);
-    font-family: var(--font-heading);
-    font-weight: 700;
+    font-family: "HeadingText1", Times; /* font-weight: 800; */
     padding-bottom: 1.2rem;
 }
 
@@ -66,7 +80,7 @@ p {
 
 details {
     border-radius: 1.6rem;
-    padding: .6rem;
+    padding: .4rem 1rem .8rem 1rem;
 }
 
 details[open] {
@@ -79,8 +93,7 @@ details[open] {
 summary {
     cursor: pointer;
 
-    font-family: var(--font-heading);
-    font-weight: 400;
+    font-family: "HeadingText2", Times; /* font-weight: 600; */
     font-size: clamp(1.5rem, 5.5vw, 1.8rem);
     color: var(--color-blue);
 }
