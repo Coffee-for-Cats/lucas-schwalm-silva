@@ -76,6 +76,54 @@ p {
     padding: .6rem 0 .6rem 0;
 }
 
+div.traits {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+}
+
+.traitsWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.traits > button {
+    padding: .2rem;
+    width: 2rem;
+    height: 2rem;
+    flex: 0 0 auto;
+
+    border: var(--color-blue) 1px solid;
+    background-color: transparent;
+    border-radius: .6rem;
+}
+
+.traitsWrapper {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.trait {
+    margin: 0 .2rem 0 .2rem;
+    flex: 0 0 auto;
+    padding: .4rem .5rem;
+    
+    border: var(--color-blue) 1px solid;
+    border-radius: .6rem;
+}
+.personality {
+    border: #00308F 1px solid;
+    color: #00308F;
+}
+.adress {
+    border: #1B4D3E 1px solid;
+    color: #1B4D3E;
+}
+
+button#nextButton {
+    right: 0;
+}
+
 details {
     border-radius: 1.6rem;
     padding: .4rem 1rem .8rem 1rem;

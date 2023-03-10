@@ -19,26 +19,48 @@
     <!-- SEO and meta's -->
     <meta name="description" content="Website e currículo pessoal de Lucas Schwalm Silva.">
     <meta name="theme-color" content="#011223">
+
+    <script defer src="./main/scroll.js"></script>
 </head>
 
 <body>
     <main>
       <address>
-      <!-- Title of the webpage -->
+      <!-- Título da Página -->
       <h1>Lucas Schwalm Silva</h1>
-        <hr>
+        <!-- <hr> -->
 
-        <!-- Escolas -->
+        <div class="traits">
+          <button id="backButton" onclick="scrollBack()">&lt</button>
+            <div class="traitsWrapper">
+              <div class="trait adress">Caxias do Sul</div>
+              <div class="trait adress">Tapes</div>
+              <div class="trait age">18 anos</div>
+              <div class="trait personality">Introvertido</div>
+              <div class="trait personality">Sistemático</div>
+              <div class="trait personality">Pragmático</div>
+            </div>
+          <button id="nextButton" onclick="scrollNext()">&gt</button>
+        </div>
+
+        <!-- Hobbies -->
+        <p>Programador e acessor de investimentos pessoais no tempo livre.</p>
+
+        <!-- Estudos -->
         <details>
           <summary>Escolaridade</summary>
           <ul>
               <li>
-                  <b>Ensino Fundamental:</b>
-                    <a href="https://bit.ly/3Z25pZM" target="_blank">Rachel🔗</a>
+                <b>Ensino Fundamental:</b>
+                  <a href="https://bit.ly/3Z25pZM" target="_blank">Rachel🔗</a>
               </li>
               <li>
-                  <b>Ensino Médio:</b>
-                    <a href="https://bit.ly/3IwcN8K" target="_blank">Patrício🔗</a>
+                <b>Ensino Médio:</b>
+                  <a href="https://bit.ly/3IwcN8K" target="_blank">Patrício🔗</a>
+              </li>
+              <li>
+                <b>Faculdade:</b> Planejo cursar Engenharia da Computação na
+                <a href="https://www.uergs.edu.br/inicial" target="_blank">UERGS🔗</a>, em guaíba.
               </li>
           </ul>
         </details>
@@ -61,10 +83,15 @@
 
         <!-- Faculdade -->
         <details>
-          <summary>Faculdade</summary>
-            <p>Planejo cursar Engenharia da Computação na
-              <a href="https://www.uergs.edu.br/inicial" target="_blank">UERGS🔗</a>.
-            </p>
+          <summary>Contatos</summary>
+          <ul>
+            <li>
+              <b>Celular e Whatsapp</b>: (51) 98117-5622
+            </li>
+            <li>
+              <b>E-mail</b>:lucas.schwalm.silva@gmail.com
+            </li>
+          </ul>
         </details>
 
     </address>
