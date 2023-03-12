@@ -5,17 +5,17 @@
 @font-face {
     font-family: NormalText;
     font-weight: 400;
-    src: url("./fonts/golosText400.woff2");
+    src: url("../fonts/golosText400.woff2");
 }
 @font-face {
     font-family: HeadingText1;
     font-weight: 800;
-    src: url("./fonts/robotoSlab800.woff2");
+    src: url("../fonts/robotoSlab800.woff2");
 }
 @font-face {
     font-family: HeadingText2;
     font-weight: 600;
-    src: url("./fonts/robotoSlab600.woff2");
+    src: url("../fonts/robotoSlab600.woff2");
 }
 
 address {
@@ -31,13 +31,15 @@ address {
     font-display: optional;
     line-height: 1.4;
     color: var(--color-blue);
+
+    border: none;
 }
 
 body {
     font-size: clamp(1.4rem, 1.6vw, 1.6rem);
     min-height: 100vh;
 
-    background-image: url("./images/background1.svg");
+    background-image: url("../images/background1.svg");
     background-color: var(--color-blue);
     background-size: cover;
 
@@ -74,74 +76,6 @@ hr {
 
 p {
     padding: .6rem 0 .6rem 0;
-}
-
-div.traits {
-    display: flex;
-    align-items: center;
-    padding: 0 1rem 0 1rem;
-}
-
-.traitsWrapper::-webkit-scrollbar {
-    display: none;
-}
-
-.traits > button {
-    padding: .2rem;
-    width: 2rem;
-    height: 2rem;
-    flex: 0 0 auto;
-
-    border: var(--color-blue) 1px solid;
-    background-color: transparent;
-    border-radius: .6rem;
-}
-
-.traitsWrapper {
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-}
-
-.trait {
-    margin: 0 .2rem 0 .2rem;
-    flex: 0 0 auto;
-    padding: .4rem .5rem;
-    
-    border: var(--color-blue) 1px solid;
-    border-radius: .6rem;
-}
-.personality {
-    border: #00308F 1px solid;
-    color: #00308F;
-}
-.adress {
-    border: #1B4D3E 1px solid;
-    color: #1B4D3E;
-}
-
-button#nextButton {
-    right: 0;
-}
-
-details {
-    border-radius: 1.6rem;
-    padding: .4rem 1rem .8rem 1rem;
-}
-
-details[open] {
-    margin: 1rem 0rem 0rem 0rem;
-    padding: 1rem;
-    border: var(--color-blue) 2px solid;
-    box-shadow: 0 .5rem 2rem 0rem rgba(0, 0, 0, .2);
-}
-
-summary {
-    cursor: pointer;
-
-    font-family: "HeadingText2", Times; /* font-weight: 600; */
-    font-size: clamp(1.5rem, 5.5vw, 1.8rem);
-    color: var(--color-blue);
 }
 
 li {

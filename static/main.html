@@ -8,9 +8,14 @@
     <title>Lucas Schwalm Silva</title>
     <link rel="icon" type="image/x-icon" href="./main/images/coffee-favicon.svg">
     
-    <link rel="stylesheet" href="./main/main.css">
-    <link rel="stylesheet" media="(min-width: 600px)" href="./main/desktop.css">
-    <!-- Preconnects -->
+    <!-- Styles -->
+    <span>
+      <link rel="stylesheet" href="./main/styles/main.css">
+      <link rel="stylesheet" media="(min-width: 600px)" href="./main/styles/desktop.css">
+      <link rel="stylesheet" href="./main/styles/details.css">
+      <link rel="stylesheet" href="./main/styles/traits.css">
+    </span>
+    <!-- Preconnects de fontes -->
     <span>
       <link rel="preconnect" href="./main/fonts/golosText400.woff2" />
       <link rel="preconnect" href="./main/fonts/robotoSlab600.woff2" />
@@ -28,19 +33,23 @@
       <address>
       <!-- Título da Página -->
       <h1>Lucas Schwalm Silva</h1>
-        <!-- <hr> -->
+        <hr>
 
         <div class="traits">
-          <button id="backButton" onclick="scrollBack()">&lt</button>
-            <div class="traitsWrapper">
-              <div class="trait adress">Caxias do Sul</div>
-              <div class="trait adress">Tapes</div>
-              <div class="trait age">18 anos</div>
-              <div class="trait personality">Introvertido</div>
-              <div class="trait personality">Sistemático</div>
-              <div class="trait personality">Pragmático</div>
-            </div>
-          <button id="nextButton" onclick="scrollNext()">&gt</button>
+          <!-- Botões laterais para o scroll facilitado -->
+          <div class="buttons">
+            <button id="backButton" onclick="scrollBack()">&lt</button>
+            <button id="nextButton" onclick="scrollNext()">&gt</button>
+          </div>
+          <!-- Minhas características -->
+          <div class="traitsWrapper">
+            <div class="trait adress">Caxias do Sul</div>
+            <div class="trait adress">Tapes</div>
+            <div class="trait age">18 anos</div>
+            <div class="trait personality">Introvertido</div>
+            <div class="trait personality">Sistemático</div>
+            <div class="trait personality">Pragmático</div>
+          </div>
         </div>
 
         <!-- Hobbies -->
@@ -89,7 +98,7 @@
               <b>Celular e Whatsapp</b>: (51) 98117-5622
             </li>
             <li>
-              <b>E-mail</b>:lucas.schwalm.silva@gmail.com
+              <b>E-mail</b>: lucas.<WBR>schwalm.<WBR>silva<WBR>@gmail.com
             </li>
           </ul>
         </details>

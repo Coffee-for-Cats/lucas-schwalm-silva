@@ -1,0 +1,20 @@
+details {
+    border-radius: 1.6rem;
+    padding: .4rem 1rem .8rem 1rem;
+}
+
+details[open] {
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 1rem;
+    border: var(--color-blue) 2px solid;
+    box-shadow: 0 .5rem 2rem 0rem rgba(0, 0, 0, .2);
+}
+
+summary {
+    cursor: pointer;
+
+    font-family: "HeadingText2", Times;
+    /* font-weight: 600; */
+    font-size: clamp(1.5rem, 5.5vw, 1.8rem);
+    color: var(--color-blue);
+}

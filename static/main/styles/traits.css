@@ -1,0 +1,67 @@
+.traits {
+    position: relative;
+}
+
+.buttons {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.traits>.buttons>button {
+    font-size: 1.6rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    
+    pointer-events: all;
+    cursor: pointer;
+}
+#backButton {
+    background: linear-gradient(to right, var(--color-white) 60%, rgba(180, 180, 180, .2));
+}
+#nextButton {
+    background: linear-gradient(to left, var(--color-white) 60%, rgba(180, 180, 180, .2));
+}
+
+.traitsWrapper {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.traitsWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.trait {
+    margin: 0 .2rem;
+    flex: 0 0 auto;
+    padding: .1rem .5rem;
+
+    border-radius: .6rem;
+}
+
+.trait:first-child {
+    margin-left: 2.6rem;
+}
+
+.trait:last-child {
+    margin-right: 2.6rem;
+}
+
+.age {
+    border: var(--color-blue) 2px solid;
+    color: var(--color-blue);
+}
+
+.personality {
+    border: #00308F 2px solid;
+    color: #00308F;
+}
+
+.adress {
+    border: #1B4D3E 2px solid;
+    color: #1B4D3E;
+}

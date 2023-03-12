@@ -1,5 +1,5 @@
 const traitsDiv = document.querySelector(".traitsWrapper")
-const scrollByPx = 120
+const scrollByPx = 160
 
 function scrollNext() {
     traitsDiv.scrollBy(scrollByPx, 0);
