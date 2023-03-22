@@ -50,12 +50,12 @@ body {
 }
 
 main {
-    width: clamp(45vw, 38rem, 94vw);
+    width: clamp(45vw, 34rem, 90vw);
 
     background: rgb(180, 180, 180);
     box-shadow: 0 4rem 8rem 0rem rgba(0, 0, 0, .6);
 
-    margin: 6rem 0 6rem 0;
+    margin: min(4rem, 12vw) 0 auto 0;
     padding: min(4rem, 6vw);
     border-radius: 1rem;
 }
