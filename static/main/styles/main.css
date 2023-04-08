@@ -45,17 +45,18 @@ body {
 
     display: flex;
     justify-content: center;
+    align-items: center;
 
     overflow-y: scroll;
 }
 
 main {
     width: clamp(45vw, 34rem, 90vw);
-
+    height: min-content;
     background: rgb(180, 180, 180);
     box-shadow: 0 4rem 8rem 0rem rgba(0, 0, 0, .6);
 
-    margin: min(6rem, 12vw) 0 2rem 0;
+    margin: min(6rem, 7vw) 0 2rem 0;
     padding: min(4rem, 6vw);
     border-radius: 1rem;
 }
@@ -64,7 +65,7 @@ h1 {
     text-align: center;
     font-size: clamp(2rem, 7vw, 2.6rem);
     font-family: "HeadingText1", Times; /* font-weight: 800; */
-    padding-bottom: 1.2rem;
+    padding-bottom: .6rem;
 }
 
 hr {
