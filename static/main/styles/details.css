@@ -4,7 +4,7 @@ details {
 }
 
 details[open] {
-    margin: 1rem 0rem 0rem 0rem;
+    margin: .6rem 0;
     padding: 1rem;
     border: var(--color-blue) 2px solid;
     box-shadow: 0 .5rem 2rem 0rem rgba(0, 0, 0, .2);
