@@ -24,10 +24,10 @@
     cursor: pointer;
 }
 #backButton {
-    background: linear-gradient(to right, var(--color-white) 60%, rgba(180, 180, 180, .2));
+    background: linear-gradient(to right, var(--color-white) 70%, rgba(180, 180, 180, .05));
 }
 #nextButton {
-    background: linear-gradient(to left, var(--color-white) 60%, rgba(180, 180, 180, .2));
+    background: linear-gradient(to left, var(--color-white) 70%, rgba(180, 180, 180, .05));
 }
 
 .traitsWrapper {
@@ -46,6 +46,7 @@
     padding: .1rem .5rem;
 
     border-radius: .6rem;
+    border: 2px solid;
 }
 
 .trait:first-child {
@@ -53,20 +54,20 @@
 }
 
 .trait:last-child {
-    margin-right: 2.6rem;
+    margin-right: 2.8rem;
 }
 
 .age {
-    border: var(--color-blue) 2px solid;
+    border-color: var(--color-blue);
     color: var(--color-blue);
 }
 
-.personality {
-    border: #00308F 2px solid;
+.tech {
+    border-color: #00308F;
     color: #00308F;
 }
 
 .adress {
-    border: #1B4D3E 2px solid;
+    border-color: #1B4D3E;
     color: #1B4D3E;
 }

@@ -37,7 +37,7 @@ address {
 
 body {
     font-size: clamp(1.15rem, 4vw, 1.6rem);
-    min-height: 100vh;
+    min-height: 100dvh;
 
     background-image: url("../images/background1.svg");
     background-color: var(--color-blue);
