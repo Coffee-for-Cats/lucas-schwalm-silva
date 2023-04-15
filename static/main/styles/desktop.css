@@ -6,3 +6,11 @@ body {
 details {
     transition: .2s;
 }
+
+.trait{
+    opacity: .8;
+}
+
+.trait:hover {
+    opacity: 1;
+}
