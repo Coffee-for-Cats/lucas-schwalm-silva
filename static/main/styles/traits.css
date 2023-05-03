@@ -25,10 +25,10 @@
     z-index: 1;
 }
 #backButton {
-    background: linear-gradient(to right, var(--color-white) 70%, rgba(180, 180, 180, .05));
+    background: linear-gradient(to right, var(--color-white) 70%, rgba(180, 180, 180, .05) 100%);
 }
 #nextButton {
-    background: linear-gradient(to left, var(--color-white) 70%, rgba(180, 180, 180, .05));
+    background: linear-gradient(to left, var(--color-white) 70%, rgba(180, 180, 180, .05) 100%);
 }
 
 .traitsWrapper {
