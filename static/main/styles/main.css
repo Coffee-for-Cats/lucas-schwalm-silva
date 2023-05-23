@@ -35,10 +35,11 @@ address {
     border: none;
 }
 
-body {
-    font-size: clamp(1.15rem, 4vw, 1.6rem);
-    min-height: 100dvh;
+html {
+    scroll-snap-type: y mandatory;
+}
 
+body {
     background-image: url("../images/background1.svg");
     background-color: var(--color-blue);
     background-size: cover;
@@ -48,6 +49,10 @@ body {
     align-items: center;
 
     overflow-y: scroll;
+}
+
+section {
+    scroll-snap-align: center;
 }
 
 ::-webkit-scrollbar{
@@ -62,19 +67,6 @@ body {
     border-radius: 1rem;
 }
 
-h1 {
-    text-align: center;
-    font-size: clamp(2rem, 7vw, 2.6rem);
-    font-family: "HeadingText1", Times; /* font-weight: 800; */
-    padding-bottom: .6rem;
-}
-
-.h2 {
-    font-family: "HeadingText2", Times;
-    /* font-weight: 600; */
-    font-size: clamp(1.5rem, 5.5vw, 1.8rem);
-}
-
 .card {
     width: clamp(45vw, 34rem, 90vw);
     height: min-content;
@@ -84,33 +76,4 @@ h1 {
     margin: min(5rem, 7vw) 0 2rem 0;
     padding: min(4rem, 6vw);
     border-radius: 1rem;
-}
-
-
-hr {
-    background-color: var(--color-blue);
-    padding: 1px;
-    border: none;
-    margin-bottom: 1rem;
-}
-
-p {
-    padding: .6rem 0 .6rem 0;
-}
-
-li {
-    margin: .4rem 0 .6rem 1.6rem;
-}
-
-a {
-    background-color: var(--color-blue);
-    padding: .2rem;
-    border-radius: .4rem;
-
-    color: var(--color-white);
-    text-decoration: none;
-}
-
-.note:before{
-    content: "↪ "
 }
