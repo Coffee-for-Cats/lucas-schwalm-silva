@@ -12,9 +12,4 @@ details[open] {
 
 summary {
     cursor: pointer;
-
-    font-family: "HeadingText2", Times;
-    /* font-weight: 600; */
-    font-size: clamp(1.5rem, 5.5vw, 1.8rem);
-    color: var(--color-blue);
 }

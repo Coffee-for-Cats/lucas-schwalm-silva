@@ -43,7 +43,7 @@ body {
     background-color: var(--color-blue);
     background-size: cover;
 
-    display: flex;
+    display: flex; flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -62,7 +62,20 @@ body {
     border-radius: 1rem;
 }
 
-main {
+h1 {
+    text-align: center;
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    font-family: "HeadingText1", Times; /* font-weight: 800; */
+    padding-bottom: .6rem;
+}
+
+.h2 {
+    font-family: "HeadingText2", Times;
+    /* font-weight: 600; */
+    font-size: clamp(1.5rem, 5.5vw, 1.8rem);
+}
+
+.card {
     width: clamp(45vw, 34rem, 90vw);
     height: min-content;
     background: rgb(180, 180, 180);
@@ -73,12 +86,6 @@ main {
     border-radius: 1rem;
 }
 
-h1 {
-    text-align: center;
-    font-size: clamp(2rem, 7vw, 2.6rem);
-    font-family: "HeadingText1", Times; /* font-weight: 800; */
-    padding-bottom: .6rem;
-}
 
 hr {
     background-color: var(--color-blue);
@@ -102,4 +109,8 @@ a {
 
     color: var(--color-white);
     text-decoration: none;
+}
+
+.note:before{
+    content: "↪"
 }
