@@ -14,3 +14,11 @@ details {
 .trait:hover {
     opacity: 1;
 }
+
+::-webkit-scrollbar {
+    background: var(--color-blue);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-white);
+}

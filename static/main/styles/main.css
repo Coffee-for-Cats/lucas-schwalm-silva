@@ -2,21 +2,6 @@
     --color-white: rgb(180, 180, 180);
     --color-blue: #011223;
 }
-@font-face {
-    font-family: NormalText;
-    font-weight: 400;
-    src: url("../fonts/lexend400.woff2");
-}
-@font-face {
-    font-family: HeadingText1;
-    font-weight: 800;
-    src: url("../fonts/robotoSlab800.woff2");
-}
-@font-face {
-    font-family: HeadingText2;
-    font-weight: 600;
-    src: url("../fonts/robotoSlab600.woff2");
-}
 
 address {
     font-style: normal;
@@ -55,25 +40,13 @@ section {
     scroll-snap-align: center;
 }
 
-::-webkit-scrollbar{
-    background: var(--color-blue);
-}
-::-webkit-scrollbar-button{
-    display: none;
-}
-::-webkit-scrollbar-thumb {
-    background-color: var(--color-white);
-    border: 2px solid var(--color-blue);
-    border-radius: 1rem;
-}
-
 .card {
     width: clamp(45vw, 34rem, 90vw);
     height: min-content;
     background: rgb(180, 180, 180);
     box-shadow: 0 4rem 8rem 0rem rgba(0, 0, 0, .6);
 
-    margin: min(5rem, 7vw) 0 2rem 0;
+    margin: 2rem 0 2rem 0;
     padding: min(4rem, 6vw);
     border-radius: 1rem;
 }

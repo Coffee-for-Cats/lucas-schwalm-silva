@@ -1,3 +1,21 @@
+@font-face {
+    font-family: NormalText;
+    font-weight: 400;
+    src: url("../fonts/lexend400.woff2");
+}
+
+@font-face {
+    font-family: HeadingText1;
+    font-weight: 800;
+    src: url("../fonts/robotoSlab800.woff2");
+}
+
+@font-face {
+    font-family: HeadingText2;
+    font-weight: 600;
+    src: url("../fonts/robotoSlab600.woff2");
+}
+
 body {
     font-size: clamp(1.15rem, 4vw, 1.6rem);
 }
