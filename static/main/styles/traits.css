@@ -52,7 +52,15 @@
     transition: .2s;
     z-index: 0;
 
+    border-color: var(--trait-color);
     cursor: default;
+    
+    color: var(--trait-color);
+}
+
+.trait:hover {
+    background: var(--trait-color);
+    color: var(--color-white);
 }
 
 .trait:first-child {
@@ -64,28 +72,13 @@
 }
 
 .trait-black {
-    border-color: var(--color-blue);
-    color: var(--color-blue);
-}
-.trait-black:hover {
-    background: var(--color-blue);
-    color: var(--color-white);
+    --trait-color: var(--color-blue);
 }
 
 .trait-blue {
-    border-color: #3862b6;
-    color: #3862b6;
-}
-.trait-blue:hover {
-    background: #3862b6;
-    color: var(--color-white);
+    --trait-color: #3862b6;
 }
 
 .trait-green {
-    border-color: #2d6856;
-    color: #2d6856;
-}
-.trait-green:hover {
-    background: #2d6856;
-    color: var(--color-white);
+    --trait-color: #2d6856;
 }
