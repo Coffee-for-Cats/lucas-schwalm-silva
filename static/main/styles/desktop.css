@@ -11,10 +11,6 @@ details {
     opacity: .8;
 }
 
-.trait:hover {
-    opacity: 1;
-}
-
 ::-webkit-scrollbar {
     background: var(--color-blue);
 }
