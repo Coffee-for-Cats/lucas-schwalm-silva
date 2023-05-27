@@ -8,4 +8,5 @@ I made it focusing on speed and using all the core vitals recommendations from G
 
 ## PageSpeed Ingishts
 It does not get 100% on accessibility because issue #3
+
 ![image](https://github.com/Coffee-for-Cats/lucas-schwalm-silva/assets/57202598/0fc65b93-7961-4229-8396-ec0d3fe1c86a)
