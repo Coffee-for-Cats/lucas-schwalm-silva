@@ -44,6 +44,10 @@ a {
     text-decoration: none;
 }
 
+section#other > * {
+    margin-bottom: .4rem;
+}
+
 .note:before {
     content: "↪ "
 }
