@@ -28,7 +28,7 @@ hr {
 }
 
 p {
-    padding: .6rem 0 .6rem 0;
+    padding: .4rem 0 .4rem 0;
 }
 
 li {
@@ -42,10 +42,6 @@ a {
 
     color: var(--color-white);
     text-decoration: none;
-}
-
-section#other > * {
-    margin-bottom: .4rem;
 }
 
 .note:before {
