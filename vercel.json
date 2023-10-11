@@ -1,8 +1,9 @@
 {
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/my-resume/:path*",
-      "destination": "./:path*"
+      "source": "/:match",
+      "destination": "/my-resume/:match",
+      "permanent": false
     }
   ]
 }
