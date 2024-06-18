@@ -37,11 +37,12 @@ li {
 
 a {
     background-color: var(--color-blue);
-    padding: .2rem;
+    padding: .2rem .4rem;
     border-radius: .4rem;
 
     color: var(--color-white);
     text-decoration: none;
+    text-wrap: nowrap;
 }
 
 .note {
