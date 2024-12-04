@@ -3,7 +3,7 @@ import { BlockyLink } from './blockyLink'
 
 export function App() {
 	return (
-		<div className="w-screen flex items-center justify-center text-slate-950 font-mono font-medium bg-zinc-200 p-2">
+		<div className="w-screen flex items-center justify-center text-slate-950 font-mono font-medium bg-zinc-200 p-2 overflow-x-hidden">
 			<div className="container m-4 min-h-svh lg:w-3/6 mt-24">
 				<header>
 					<h1 className="text-indigo-950 font-semibold text-6xl">
