@@ -3,20 +3,20 @@ import { BlockyLink } from './blockyLink'
 
 export function App() {
 	return (
-		<div className="w-screen h-screen flex items-center justify-center text-slate-950 font-mono font-medium bg-zinc-200 overflow-x-hidden">
-			<div className="container m-4 min-h-svh sm:w-5/6 lg:w-3/6">
-				<header className="mt-24">
+		<div className="w-screen flex items-center justify-center text-slate-950 font-mono font-medium bg-zinc-200 p-2">
+			<div className="container m-4 min-h-svh lg:w-3/6 mt-24">
+				<header>
 					<h1 className="text-indigo-950 font-semibold text-6xl">
 						Hello, I am Lucas!
 					</h1>
 				</header>
-				<main className="my-12 m-6 flex flex-col sm:flex-row">
+				<main className="my-12 flex flex-col sm:flex-row">
 					<img
-						className="w-52 rounded-full border-indigo-950 border-4"
+						className="w-52 ml-6 rounded-full border-indigo-950 border-4"
 						src="https://avatars.githubusercontent.com/u/57202598?s=400&u=07d28aa77c08dcef79364a50831a494c1b16fecf&v=4"
 						alt="My profile"
 					/>
-					<div className="m-4 sm:ml-6 h-2/6">
+					<div className="m-4 lg:ml-6 h-2/6">
 						<p className="text-slate-900">
 							I am a 19 years old student, looking for experience and self
 							development.
@@ -89,7 +89,7 @@ export function App() {
 						to improve usuability and acessibility for my university.
 					</div>
 					<a
-						className="float-right text-indigo-800 underline"
+						className="float-right text-indigo-800 underline mt-12"
 						href="mailto:lucas-silva06@uergs.edu.br"
 					>
 						lucas-silva06@uergs.edu.br
