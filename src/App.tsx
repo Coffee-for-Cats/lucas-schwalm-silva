@@ -88,6 +88,12 @@ export function App() {
 						a Knob and Switch simulator, often used for teaching assembly; built
 						to improve usuability and acessibility for my university.
 					</div>
+					<a
+						className="float-right text-indigo-800 underline"
+						href="mailto:lucas-silva06@uergs.edu.br"
+					>
+						lucas-silva06@uergs.edu.br
+					</a>
 				</footer>
 			</div>
 		</div>
