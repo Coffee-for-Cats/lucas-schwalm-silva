@@ -1,13 +1,16 @@
 import React from 'react'
 import { BlockyLink } from './blockyLink'
+import { Project } from './Project'
 
 export function App() {
 	return (
-		<div className="w-screen flex items-center justify-center text-slate-950 font-mono font-medium bg-zinc-200 p-2">
-			<div className="container m-4 min-h-svh lg:w-3/6 mt-24">
+		<div className="w-screen flex items-center justify-center overflow-x-hidden text-slate-950 font-mono font-medium bg-zinc-200 p-4">
+			<div className="container m-4 min-h-svh lg:w-3/6 mt-20 sm:mt-16">
 				<header>
 					<h1 className="text-indigo-950 font-semibold text-6xl">
-						Hello, I am Lucas!
+						<span className="inline-block">Hello,&nbsp;</span>
+						<span className="inline-block">I am&nbsp;</span>
+						<span className="inline-block underline">Lucas</span>!
 					</h1>
 				</header>
 				<main className="my-12 flex flex-col sm:flex-row">
@@ -16,21 +19,26 @@ export function App() {
 						src="https://avatars.githubusercontent.com/u/57202598?s=400&u=07d28aa77c08dcef79364a50831a494c1b16fecf&v=4"
 						alt="My profile"
 					/>
-					<div className="m-4 lg:ml-6 h-2/6">
+					<div className="m-4 md:ml-6 h-2/6">
 						<p className="text-slate-900">
 							I am a 19 years old student, looking for experience and self
 							development.
 						</p>
 						<address className="mt-12">
-							<ul className="flex flex-row">
+							<ul className="flex flex-col md:flex-row">
 								<div className="mr-2">
 									<BlockyLink href="https://github.com/Coffee-for-Cats">
 										Github
 									</BlockyLink>
 								</div>
-								<div className="mr-2">
+								<div className="mr-2 mt-2 md:mt-0">
 									<BlockyLink href="https://www.linkedin.com/in/lucas-schwalm-silva-39a318207/">
 										Linkedin
+									</BlockyLink>
+								</div>
+								<div className="mr-2 mt-2 md:mt-0">
+									<BlockyLink href="https://wa.link/abpf38/">
+										WhatsApp
 									</BlockyLink>
 								</div>
 							</ul>
@@ -56,13 +64,13 @@ export function App() {
 						/>
 						<img
 							className="w-8 mr-3"
-							alt="react"
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+							alt="postgres"
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
 						/>
 						<img
 							className="w-8 mr-3"
-							alt="postgres"
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+							alt="react"
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
 						/>
 						<img
 							className="w-8 mr-3"
@@ -74,20 +82,26 @@ export function App() {
 					<h2 className="text-indigo-950 text-2xl font-semibold mt-12">
 						Projects
 					</h2>
-					<div>
-						<BlockyLink href="https://www.uergs.edu.br/pro-reitoria-de-pesquisa-e-pos-graduacao-desenvolve-sistema-proprio-de-submissao-de-projetos-de-pesquisa">
-							SSP UERGS
-						</BlockyLink>{' '}
-						a Submission System for Projects of master's students. I am an
-						active contributor and scholarship holder for the system.
-					</div>
-					<div className="mt-4">
-						<BlockyLink href="https://github.com/Coffee-for-Cats/kes-simulator">
-							K&S Simulator
-						</BlockyLink>{' '}
-						a Knob and Switch simulator, often used for teaching assembly; built
-						to improve usuability and acessibility for my university.
-					</div>
+					<Project
+						link="https://github.com/Coffee-for-Cats/golang-quizzes"
+						name="Golang Quizzes"
+						techs="Go, Postgres, Docker Compose"
+						desc="A golang server, implementing a quiz application with authentication."
+					/>
+					<Project
+						link="https://www.uergs.edu.br/pro-reitoria-de-pesquisa-e-pos-graduacao-desenvolve-sistema-proprio-de-submissao-de-projetos-de-pesquisa"
+						name="SSP UERGS"
+						techs="PHP, JS, Bootstrap"
+						desc="A Project Submission System for master's students. I am an active
+			contributor and scholarship holder for the system."
+					/>
+					<Project
+						link="https://github.com/Coffee-for-Cats/kes-simulator"
+						name="K&S Simulator"
+						techs="TS, ASM"
+						desc="A Knob and Switch simulator, often used for teaching assembly; built
+						to improve usuability and acessibility for my university."
+					/>
 					<a
 						className="float-right text-indigo-800 underline mt-12"
 						href="mailto:lucas-silva06@uergs.edu.br"
