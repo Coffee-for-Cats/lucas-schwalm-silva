@@ -27,15 +27,10 @@ export function App() {
 							development.
 						</p>
 						<address className="mt-12">
-							<ul className="flex flex-col md:flex-row">
+							<div className="flex flex-col md:flex-row">
 								<div className="mr-2">
 									<BlockyLink href="https://github.com/Coffee-for-Cats">
 										Github
-									</BlockyLink>
-								</div>
-								<div className="mr-2 mt-2 md:mt-0">
-									<BlockyLink href="https://www.linkedin.com/in/lucas-schwalm-silva-39a318207/">
-										Linkedin
 									</BlockyLink>
 								</div>
 								<div className="mr-2 mt-2 md:mt-0">
@@ -43,7 +38,12 @@ export function App() {
 										WhatsApp
 									</BlockyLink>
 								</div>
-							</ul>
+								<div className="mr-2 mt-2 md:mt-0">
+									<BlockyLink href="#">
+										<span className="line-through">LinkedIn</span>
+									</BlockyLink>
+								</div>
+							</div>
 						</address>
 					</div>
 				</main>
@@ -104,12 +104,20 @@ export function App() {
 						desc="A Knob and Switch simulator, often used for teaching assembly; built
 						to improve usuability and acessibility for my university."
 					/>
-					<a
-						className="float-right text-indigo-800 underline mt-12"
-						href="mailto:lucas-silva06@uergs.edu.br"
-					>
-						lucas-silva06@uergs.edu.br
-					</a>
+					<div className="flex flex-col float-right items-end mt-12">
+						<a
+							className="float-right text-indigo-800 underline block"
+							href="mailto:lucas-silva06@uergs.edu.br"
+						>
+							lucas-silva06@uergs.edu.br
+						</a>
+						<a
+							className="float-right text-indigo-800 underline mt-6"
+							href="mailto:lucas.schwalm.silva@gmail.com"
+						>
+							lucas.schwalm.silva@gmail.com
+						</a>
+					</div>
 				</footer>
 			</div>
 		</div>
