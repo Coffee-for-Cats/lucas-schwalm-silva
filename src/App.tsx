@@ -15,6 +15,8 @@ export function App() {
 				</header>
 				<main className="my-12 flex flex-col sm:flex-row">
 					<img
+						height={208}
+						width={208}
 						className="w-52 ml-6 rounded-full border-indigo-950 border-4"
 						src="https://avatars.githubusercontent.com/u/57202598?s=400&u=07d28aa77c08dcef79364a50831a494c1b16fecf&v=4"
 						alt="My profile"
