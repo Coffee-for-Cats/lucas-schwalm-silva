@@ -39,8 +39,8 @@ export function App() {
 									</BlockyLink>
 								</div>
 								<div className="mr-2 mt-2 md:mt-0">
-									<BlockyLink href="#">
-										<span className="line-through">LinkedIn</span>
+									<BlockyLink href="https://www.linkedin.com/in/lucas-schwalm-silva/">
+										LinkedIn
 									</BlockyLink>
 								</div>
 							</div>
