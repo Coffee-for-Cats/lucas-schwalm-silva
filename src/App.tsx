@@ -1,6 +1,6 @@
 import React from 'react'
 import { BlockyLink } from './components/blockyLink.tsx'
-import { Project } from './components/Project'
+import { Selector } from './components/selector.tsx'
 
 export function App() {
 	return (
@@ -43,71 +43,13 @@ export function App() {
 					</div>
 				</main>
 
-				<footer className="leading-7 mb-12 p-px">
-					<h2 className="text-indigo-950 text-2xl font-semibold mt-12">
-						Technologies
-					</h2>
-					{/* Techonologies Images */}
-					<div className="flex">
-						<img
-							className="w-8 mr-3"
-							alt="typescript"
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-						/>
-						<img
-							className="w-8 mr-3"
-							alt="golang"
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"
-						/>
-						<img
-							className="w-8 mr-3"
-							alt="postgres"
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-						/>
-						<img
-							className="w-8 mr-3"
-							alt="react"
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-						/>
-						<img
-							className="w-8 mr-3"
-							alt="tailwindcss"
-							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-						/>
-					</div>
+				{/* section selesctor with technologies and stuff */}
+				<Selector />
 
-					<h2 className="text-indigo-950 text-2xl font-semibold mt-12">
-						Projects
-					</h2>
-					<Project
-						link="https://github.com/Coffee-for-Cats/golang-quizzes"
-						name="Golang Quizzes"
-						techs="Go, Postgres, Docker Compose"
-						desc="A golang server, implementing a quiz application with authentication."
-					/>
-					<Project
-						link="https://www.uergs.edu.br/pro-reitoria-de-pesquisa-e-pos-graduacao-desenvolve-sistema-proprio-de-submissao-de-projetos-de-pesquisa"
-						name="SSP UERGS"
-						techs="PHP, JS, Bootstrap"
-						desc="A Project Submission System for master's students. I am an active
-			contributor and scholarship holder for the system."
-					/>
-					<Project
-						link="https://github.com/Coffee-for-Cats/kes-simulator"
-						name="K&S Simulator"
-						techs="TS, ASM"
-						desc="A Knob and Switch simulator, often used for teaching assembly; built
-						to improve usuability and acessibility for my university."
-					/>
+				<footer className="leading-7 mb-12 p-px">
 					<div className="flex flex-col float-right items-end mt-12">
 						<a
-							className="float-right text-indigo-800 underline block"
-							href="mailto:lucas-silva06@uergs.edu.br"
-						>
-							lucas-silva06@uergs.edu.br
-						</a>
-						<a
-							className="float-right text-indigo-800 underline mt-6"
+							className="float-right text-indigo-800 underline"
 							href="mailto:lucas.schwalm.silva@gmail.com"
 						>
 							lucas.schwalm.silva@gmail.com
