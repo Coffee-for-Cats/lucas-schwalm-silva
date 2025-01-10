@@ -40,17 +40,17 @@ export function TechnologiesComponent() {
 			<div className="flex">
 				<img
 					className="w-6 mr-3"
-					alt="react"
+					alt="rust"
 					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
 				/>
 				<img
 					className="w-8 mr-3 -mt-1"
-					alt="react"
+					alt="java"
 					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
 				/>
 				<img
 					className="w-8 mr-3"
-					alt="react"
+					alt="php"
 					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
 				/>
 			</div>
