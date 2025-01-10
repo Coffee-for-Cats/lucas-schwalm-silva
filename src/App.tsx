@@ -1,6 +1,6 @@
 import React from 'react'
-import { BlockyLink } from './blockyLink'
-import { Project } from './Project'
+import { BlockyLink } from './components/blockyLink.tsx'
+import { Project } from './components/Project'
 
 export function App() {
 	return (
@@ -31,11 +31,6 @@ export function App() {
 								<div className="mr-2">
 									<BlockyLink href="https://github.com/Coffee-for-Cats">
 										Github
-									</BlockyLink>
-								</div>
-								<div className="mr-2 mt-2 md:mt-0">
-									<BlockyLink href="https://wa.link/abpf38/">
-										WhatsApp
 									</BlockyLink>
 								</div>
 								<div className="mr-2 mt-2 md:mt-0">

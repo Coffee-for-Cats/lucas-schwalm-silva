@@ -1,5 +1,5 @@
 import React from 'react'
-import { BlockyLink } from './blockyLink'
+import { BlockyLink } from '../components/blockyLink'
 
 export function Project({ link, name, techs, desc }) {
 	return (
