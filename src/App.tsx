@@ -6,13 +6,18 @@ export function App() {
 	return (
 		<div className="w-screen flex items-center justify-center overflow-x-hidden text-slate-950 font-mono font-medium bg-zinc-200 p-4">
 			<div className="container m-4 min-h-svh lg:w-3/6 mt-20 sm:mt-16">
+				{/* heading title */}
 				<header>
 					<h1 className="text-indigo-950 font-semibold text-6xl">
 						<span className="inline-block">Hello,&nbsp;</span>
 						<span className="inline-block">I am&nbsp;</span>
-						<span className="inline-block underline">Lucas</span>!
+						<span className="inline-block">
+							<span className="underline">Lucas</span>!
+						</span>
 					</h1>
 				</header>
+
+				{/* main photo, description and links */}
 				<main className="my-12 flex flex-col sm:flex-row">
 					<img
 						height={208}
@@ -46,10 +51,11 @@ export function App() {
 				{/* section selesctor with technologies and stuff */}
 				<Selector />
 
-				<footer className="leading-7 mb-12 p-px">
-					<div className="flex flex-col float-right items-end mt-12">
+				{/* footer link */}
+				<footer className="leading-7 p-px">
+					<div className="flex flex-col items-center mt-12">
 						<a
-							className="float-right text-indigo-800 underline"
+							className="mx-auto text-indigo-800 underline"
 							href="mailto:lucas.schwalm.silva@gmail.com"
 						>
 							lucas.schwalm.silva@gmail.com
