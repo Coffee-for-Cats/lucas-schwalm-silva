@@ -4,52 +4,55 @@ import { TechnologiesComponent } from './techs'
 
 export function Selector() {
 	const [open, setOpen] = useState('University')
+	console.log(open)
 
 	const blocks = {
-		University,
-		Techs,
-		Projects,
+		University: <University />,
+		Techs: <Techs />,
+		Projects: <Projects />,
 	}
 
 	const errorMsg = 'Sorry, this should not be happening =('
 
 	return (
 		<section className="m-2 p-2">
-			<ul className="flex">
-				<button
-					className="mr-2 p-2 text-lg text-indigo-950 font-semibold hover:underline transition"
-					type="button"
-					onClick={() => {
-						setOpen('University')
-					}}
-				>
+			<div className="flex">
+				<SectionHeader setter={setOpen} getter={open}>
 					University
-				</button>
-				<button
-					className="mx-2 p-2 text-lg text-indigo-950 font-semibold hover:underline transition"
-					type="button"
-					onClick={() => {
-						setOpen('Techs')
-					}}
-				>
+				</SectionHeader>
+
+				<SectionHeader setter={setOpen} getter={open}>
 					Techs
-				</button>
-				<button
-					className="mx-2 p-2 text-lg text-indigo-950 font-semibold hover:underline"
-					type="button"
-					onClick={() => {
-						setOpen('Projects')
-					}}
-				>
+				</SectionHeader>
+
+				<SectionHeader setter={setOpen} getter={open}>
 					Projects
-				</button>
-			</ul>
+				</SectionHeader>
+			</div>
 
 			<div className="mx-2 my-4">
-				{/* Pretty confusing, but I promise makes sense =p */}
-				{(blocks[open] ? blocks[open]() : errorMsg) || errorMsg}
+				{/* Pretty confusing, but I promise it makes sense =p */}
+				{(blocks[open] ? blocks[open] : errorMsg) || errorMsg}
 			</div>
 		</section>
+	)
+}
+
+// typescripts gets messy after some time, better without
+function SectionHeader({ children, setter, getter }) {
+	const underlined = getter === children ? 'underline' : ' '
+
+	return (
+		<button
+			// problem of react, just too many things all at once
+			className={`mr-2 p-2 text-lg text-indigo-950 font-semibold hover:underline transition ${underlined}`}
+			type="button"
+			onClick={() => {
+				setter(children)
+			}}
+		>
+			{children}
+		</button>
 	)
 }
 
