@@ -3,6 +3,16 @@ import { BlockyLink } from './components/blockyLink.tsx'
 import { Selector } from './components/selector.tsx'
 
 export function App() {
+	const FEB = 1
+	const today = new Date()
+	let age = today.getFullYear() - new Date('2005-02-02').getFullYear()
+
+	if (
+		today.getMonth() < FEB ||
+		(today.getMonth() === FEB && today.getDate() < 2)
+	)
+		age--
+
 	return (
 		<div className="w-screen flex items-center justify-center overflow-x-hidden text-slate-950 font-mono font-medium bg-zinc-200 p-4">
 			<div className="container m-4 min-h-svh lg:w-3/6 mt-20 sm:mt-16">
@@ -28,7 +38,7 @@ export function App() {
 					/>
 					<div className="m-4 md:ml-6 h-2/6">
 						<p className="text-slate-900">
-							I am a 19 years old student, looking for experience and self
+							I am a {age} years old student, looking for experience and self
 							development.
 						</p>
 						<address className="mt-12">
